@@ -1,0 +1,274 @@
+/* ==UserStyle==
+@name           Dark Instagram (variable recolor) - FORKED
+@namespace      github.com/blyad2137/dark-instagram--variable-recolor--forked
+@author         Daniel Perren(https://userstyles.world/user/grizzoch) | blyad(https://github.com/blyad2137)
+@description    `Changes white to dark 8)`
+@version        1.0.0
+@license        CC BY-NC-SA 4.0
+@preprocessor   uso
+
+@advanced dropdown scrollbar "Scrollbar" {
+	included "Scrollbar included*" <<<EOT 
+	/* SCROLLBAR *\/
+		/* width *\/
+		::-webkit-scrollbar {
+			width: 10px;
+		}
+
+		/* Track *\/
+		::-webkit-scrollbar-track {
+			box-shadow: inset 0 0 5px #000; 
+		}
+
+		/* Handle *\/
+		::-webkit-scrollbar-thumb {
+			background: rgb(100, 100, 100); 
+		}
+
+		/* Handle on hover *\/
+		::-webkit-scrollbar-thumb:hover {
+			background: rgb(150, 150, 150); 
+		} EOT;
+	excluded "Scrollbar excluded" <<<EOT  EOT;
+}
+@advanced text feed "Size of the posts" 90%
+
+==/UserStyle== */
+@-moz-document domain('instagram.com') {
+    html,
+    body,
+    div,
+    nav,
+    article,
+    section {
+
+        --hscc-collapse-transition-duration: .3s;
+        --ig-badge: 220, 220, 220;
+        --ig-close-friends-refreshed: 28, 209, 79;
+        --ig-elevated-background: 15, 15, 15;
+        --ig-elevated-separator: 100, 100, 100;
+        --ig-error-or-destructive: 237, 73, 86;
+        --ig-facebook-blue: 53, 121, 234;
+        --ig-focus-stroke: 168, 168, 168;
+        --ig-full-screen-background: 54, 54, 54;
+        --ig-highlight-background: 50, 50, 50;
+        --ig-link: 76, 168, 255;
+        --ig-live-badge: 255, 1, 105;
+        --ig-primary-background: 24, 24, 24;
+        --ig-primary-button: 76, 168, 255;
+        --ig-primary-text: 200, 200, 200;
+        --ig-secondary-background: 28, 28, 28;
+        --ig-secondary-button: 200, 200, 200;
+        --ig-secondary-text: 180, 180, 180;
+        --ig-separator: 61, 61, 61;
+        --ig-stroke: 61, 61, 61;
+        --ig-subscribers-only: 118, 56, 250;
+        --ig-success: 88, 195, 34;
+        --ig-temporary-highlight: 245, 251, 255;
+        --ig-tertiary-text: 111, 111, 111;
+        --ig-text-on-color: 255, 255, 255;
+        --modal-backdrop-dark: rgba(0, 0, 0, .85);
+        --modal-backdrop-default: rgba(0, 0, 0, .65);
+        --modal-border-radius: 12px;
+        --modal-padding: 16px;
+        --modal-z-index: 100;
+        --orange-5: #fd8d32;
+        --photo: 600px;
+        --pink-5: #d10869;
+        --post-step-indicator: 168, 168, 168;
+        --post-separator: 100, 100, 100;
+        --purple-5: #a307ba;
+        --red-4: #ff6874;
+        --red-5: #ed4956;
+        --red-6: #c62330;
+        --red-7: #a70311;
+        --tos-box-shadow: 0, 0, 0;
+        --web-always-black: 0, 0, 0;
+        --web-always-white: 255, 255, 255;
+        --web-overlay-on-media: 38, 38, 38;
+        --web-secondary-action: 224, 241, 255;
+        --yellow-5: #fdcb5c;
+        
+        
+            /* Username links */
+    --fe0: 0, 155, 255 !important;
+    
+    /* Follow Button */
+    --d69: 0, 149, 246 !important;
+    
+    --b86: 88, 195, 34 !important;
+    
+    --i30: 237, 73, 86 !important;
+    --c37: 237, 73, 86 !important;
+    
+    --f24: 0, 149, 246 !important;
+    
+    --fa7: 224, 241, 50 !important;
+    
+    --jbb: 53, 121, 234 !important;
+    
+    --eac: 237, 73, 86 !important;
+    
+    --e62: 245, 251, 50 !important;
+    
+    --b2f: 168, 60, 221 !important;
+    
+    /* Message interaction DMs */
+    --jb7: 50, 50, 50 !important;
+    --jd9: 255, 255, 255 !important;
+    --cdd: 217, 217, 217 !important;
+    
+    /* Text and Usernames */
+    --i1d: 255, 255, 255 !important;
+    --d20: 190, 190, 190 !important;
+    --eca: 30, 30, 30 !important;
+    
+    /* Username and Like count */
+    --f75: 190, 190, 190 !important;
+    --j64: 201, 201, 201 !important;
+    
+    /* Link Color and Time Labels */
+    --f52: 158, 158, 158 !important;
+    --ie3: 158, 158, 158 !important;
+    
+    --ba8: 87, 87, 87 !important;
+    --c8c: 87, 87, 87 !important;
+    
+    --e22: 46, 46, 46 !important;
+    --edc: 46, 46, 46 !important;
+    
+    /* Borders */
+    --b38: 100, 100, 100 !important;
+    --b6a: 100, 100, 100 !important;
+    --ca6: 100, 100, 100 !important;
+    
+    /* Spacerbar */
+    --ce3: 100, 100, 100 !important;
+    
+    --bb2: 21, 21, 21 !important;
+    --a97: 7, 7, 7 !important;
+    
+    /* Main Background */
+    --b3f: 25, 25, 25 !important;
+    --d62: 25, 25, 25 !important;
+    --a72: 25, 25, 25 !important;
+    --h1d: 25, 25, 25 !important;
+    --de5: 25, 25, 25 !important;
+        
+    /* Header Backgrounds */
+    --d87: 25, 25, 25 !important;
+    --f23: 25, 25, 25 !important;
+    }
+
+    /* Color Correction Logos */
+    ._9zn7, i, .s4Iyt, svg:not(._ab8k._ab8v._ab8w._ab94._ab99._ab9f._ab9m._ab9p._abam._abbk._ab9y._aba8 svg):not([fill="#ffffff"]):not([fill="#8e8e8e"]):not(a.sf--story-btn svg), ._9zkj, ._a3ds, ._a3dt, ._a3du, ._a3dv, ._a3dw, ._9-b3, ._9znl, ._9z-6, ._a3dx, ._a3dy, ._a3dz, ._a3d-, ._a3d_, ._a3e0, ._9zm4, ._a3e1, ._a3e2, ._a3e3, ._a3e4, ._a3e5, ._a3e6, ._a3e7, ._a3e8, ._a3e9, ._a3ea, ._9_57, ._9_n5, ._9-y3, ._a3eb, ._a3ec, ._a3ed, ._a3ee, ._a04s, ._9zlu, ._9-yp, ._a3ef, ._a3eg, ._9_wm, ._a3eh, ._a3ei, ._a3ej, ._a3ek, ._9_ij, ._9_d_, ._9_e1, ._9-mm, ._9_cx, ._9zfi, ._9-ub, ._a3el, ._9-7-, ._9-1a, ._a3em, ._9zrp, ._a3en, ._9zz9, ._a3eo, ._9zmr, ._9-8d, ._9zhi, ._a3ep, ._a3eq, ._9zli, ._9_4y, ._9zfj, ._9zlg, ._a3er, ._9-lv, ._9_ug, ._9_sh, ._9_sj, ._9z-c, ._9_35, ._9_hh, ._a3es, ._a3et, ._a3eu, ._9-v-, ._9_4d, ._9zlh, ._a3ev, ._a3ew, ._a3ex, ._a3ey, ._9ys7, ._9ys8, ._9_7m, ._9_fv, ._a3ez, [src="https://static.xx.fbcdn.net/rsrc.php/v3/yT/r/nppLrRDPwRh.png"], [src="https://static.xx.fbcdn.net/rsrc.php/v3/y-/r/Ma96NGMpx3k.png"], [src="https://static.xx.fbcdn.net/rsrc.php/v3/yW/r/hzSTybO4xnl.png"],[src="https://static.xx.fbcdn.net/rsrc.php/v3/yl/r/mRucGeWws8j.png"], ._9-zf, ._9-zg, ._9-ze, ._a9fa, ._9-zh, ._9-zi, ._9-zj, ._9-zk, ._9-zl, ._9-zm, ._9-zn, ._9-zo, ._9-zp, ._9-zq, ._9-zr, ._9-zs, ._9-zt, ._a3op, ._a3oq, ._9-zu, ._9-zv, ._9-zw, ._9-zx, ._9-zy, ._9-zz, ._9-z-, ._a3or, ._a3ot, ._a3os, ._9zs1, ._9zs2, ._9-z_, ._9--0, ._9--1, ._9--2, ._9--3, ._9--4, ._9--5, ._9--6, ._9--7, ._9--f, ._9--8, ._9--9, ._9--a, ._9--b, ._9--c, ._9--d, ._9--e, ._a3ou, ._9--g, ._9--h, ._9--i, ._9--j, ._9--l, ._9--k, ._9--m, ._9--n, ._9--o, ._9--p, ._9--q, ._a3ov, ._9--s, ._9--r, ._9--t, ._9--u, ._9--v, ._9--x, ._9--y, ._9--w, ._9--z, ._9--_, ._9-_0, ._9-_1, ._9-_2, ._9-_3, ._9---, ._9-_4, ._9-_5, ._9-_6, ._9-_7, ._a3wy, ._9-_8, ._9-_9, ._a3ow, ._9-_a, ._9-_b, ._9-_c, ._9-_d, ._9-_e, ._9-_f, ._9-_g, ._9-_h, ._9-_i, ._9-_j, ._9-_k, ._9-_l, ._9-_m, ._9-_n, ._9-_o, ._a3ox, ._9-_p, ._9-_q, ._a9fb, ._9-_t, ._9-_r, ._9-_s, ._a93g, ._9-_u, ._9-_v, ._a9fc, ._9-_w, ._9-_x, ._9-_y, ._9-_z, ._9-_-, ._9-__, ._9_00, ._a3oy, ._9_01, ._9_02, ._9_03, ._9_04, ._9_05, ._9_08, ._9_09, ._9_07, ._9_06, ._9_0a, ._9_0b, ._9_0c, ._9_0d, ._9_0e, ._9_0f, ._9_0g, ._a93h, ._9_0h, ._9_0i, ._9_0j, ._9_0k, ._aepo, ._9_0l, ._9_0m, ._9_0n, ._9_0o, ._9_0p, ._a3oz, ._a93l, ._9_0r, ._9_0s, ._a7tk, ._9_0q, ._a3o-, ._9_0t, ._9_0v, ._9_0u, ._a9ej, ._9_0w, ._9_0x, ._9_0y, ._9_0z, ._9_0_, ._9_0-, ._9_10, ._9_11, ._9_12, ._9_13, ._9_14, ._9_15, ._a3o_, ._9_18, ._9_19, ._9_1a, ._9_1e, ._9_1b, ._9_1c, ._9_1d, ._9_16, ._9_17, ._a3p0, ._9_1f, ._9_1g, ._9_1i, ._9_1h, ._9_1j, ._9_1k, ._9_1l, ._9_1m, ._a9pw {
+        filter: invert(1) hue-rotate(180deg);
+    }
+    [src*="/qp_instagram_meta_badge-4x-light.png"], [src="https://static.xx.fbcdn.net/rsrc.php/v3/y0/r/I7oK-BX_VXn.png"] {
+		filter: invert(.835) hue-rotate(180deg);
+	}
+	[src="https://static.cdninstagram.com/rsrc.php/v3/y4/r/ShFi4iY4Fd9.gif"] {
+		filter: invert(.905) hue-rotate(180deg) saturate(3);
+	}
+	._a3gq ._aamt canvas, ._a3gq ._aarg canvas, ._a3gq ._aarf canvas {
+		filter: invert(.835) hue-rotate(180deg) saturate(3);
+	}
+	
+    ._a3gq ._ac0f a.oajrlxb2.g5ia77u1.qu0x051f.esr5mh6w.e9989ue4.r7d6kgcz.rq0escxv.nhd2j8a9.nc684nl6.p7hjln8o.kvgmc6g5.cxmmr5t8.oygrvhab.hcukyx3x.jb3vyjys.rz4wbd8a.qt6c0cv9.a8nywdso.i1ao9s8h.esuyzwwr.f1sip0of.lzcic4wl._a6hd:nth-of-type(1) {
+        filter: invert(1) hue-rotate(180deg) !important;
+    }
+    
+
+    /* Removes Suggestions on main page */
+    ._9-ta, .COOzN {
+        display: none !important;
+    }
+
+    /* correcting positioning */
+    ._aam3 {
+        max-width: /*[[feed]]*/ !important;
+    }
+    
+    /* Chat recolors */
+    ._ac1q {
+        background: rgb(var(--ig-fullscreen-background)) !important;
+        border: 1px solid rgb(var(--ig-highlight-background)) !important;
+    }
+	
+	/*Little Tweakin'*/
+	body, ._a3gq ._ac60:before, ._a3gq ._aaqh, img._aadp {
+    	background-color: rgb(var(--ig-primary-background),1);
+	}
+	._a3gq ._ac31 {
+		background-color: rgba(var(--ig-secondary-background),1);
+		border-color: rgba(var(--ig-secondary-background),1);
+	}
+	._a3gq ._aabn, ._a3gq ._abg6 {
+		border-color: rgba(var(--ig-secondary-background),1);
+	}
+	._a3gq ._ac34::after {
+		color: rgba(var(--ig-text-on-color),1);
+	}
+	._a3gq ._ackh {
+		position: relative;
+	}
+	._a3gq ._aahi, ._a3gq ._aahh {
+		filter: drop-shadow(0 0 5px rgba(var(--f23),1));
+		padding: 0;
+		margin: 16px 8px;
+	}
+	._a3gq ._aahi:hover, ._a3gq ._aahh:hover {
+		filter: saturate(15) brightness(5);
+	}
+	._a3gq ._aa5_ {
+		box-shadow: 0 0 5px 1px rgba(var(--ig-badge), .0975);
+		border: 1px solid rgba(var(--ig-badge),.4);
+	}
+	hr, ._a3gq ._aa1g {
+		background-color: rgba(var(--ig-separator),.5);
+	}
+	div[data-bloks-name="bk.components.Flexbox"][style*="background: rgb(255, 255, 255)"], div[data-bloks-name="bk.components.Flexbox"][style*="background: rgb(250, 250, 250)"] {
+		background-color: rgba(var(--d87),1) !important;
+	}
+	[style*="background: rgb(38, 38, 38)"] {
+		background-color: rgba(var(--jd9),.7) !important;
+	}
+	._a3gq ._acne ._acnb:not(._a3gq ._acne ._acnf) {
+		background-color: rgba(var(--jd9),.3);
+	}
+	._a3gq ._a9_a, ._a3gq ._aa-g, ._a3gq ._ab3_, ._a3gq ._ab44, ._a3gq ._ab3x, ._a3gq ._aahg, ._a3gq ._aag-, ._a3gq ._aaie, ._a3gq ._aavb, ._a3gq ._aav7, ._a3gq ._acat, a._acat, a._acat:visited, ._a3gq ._ac7h, ._a3gq ._aaj7, ._a3gq ._aaja {
+		border-color: rgba(var(--jd9),.3);
+	}
+	[data-bloks-name="bk.components.Text"][style*="color: rgb(38, 38, 38)"], [data-bloks-name="bk.components.TextSpan"][style*="color: rgb(38, 38, 38)"] {
+		color: rgba(var(--jd9),.8) !important;
+	}
+	[data-bloks-name="bk.components.Flexbox"][role="button"][style*="border: 1px solid rgb(219, 219, 219); cursor: pointer; background: rgb(255, 255, 255)"] {
+		background-color: rgba(var(--d87),1) !important;
+		border-color: rgba(var(--jd9),.3) !important;
+	}
+	[data-bloks-name="bk.components.Flexbox"][style*="background: rgb(219, 219, 219)"] {
+		background-color: rgba(var(--eca),1) !important;
+	}
+	[data-bloks-name="bk.components.TextSpan"][style*="color: rgb(0, 55, 107)"] {
+		color: rgba(var(--ig-link),1) !important;
+	}
+	._a3gq ._aak9 {
+		position: relative;
+		left: 0 !important;
+	}
+	._a3gq ._aak3, ._a3gq ._aa-m {
+		background-color: transparent;
+	}
+	._a3gq ._ac7h {
+		margin-top: 8px;
+	}
+	._a3gq ._ac60 {
+		background-color: rgba(var(--ig-separator),1);
+	}
+	option {
+		background-color: rgba(var(--ig-primary-background),1);
+		color: rgba(var(--jd9),1) !important;
+	}
+	
+    /*[[scrollbar]]*/
+}
