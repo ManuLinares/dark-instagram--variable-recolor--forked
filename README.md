@@ -1,4 +1,4 @@
-<p align="center"><a href="https://userstyles.world/style/5592/dark-instagram-variable-recolor-forked"><img src="https://i.imgur.com/fPb2Xbs.png" style="width: 20rem;"></img></a></p>
+<p align="center"><a href="https://userstyles.world/style/5592/dark-instagram-variable-recolor-forked"><img src="https://i.imgur.com/fPb2Xbs.png" style="width: 30rem;"></img></a></p>
 
 <div id="preview">
   <h2>🖼 Preview</h2>
