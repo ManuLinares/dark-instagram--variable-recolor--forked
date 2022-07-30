@@ -1,8 +1,8 @@
-<p align="center"><a href="https://userstyles.world/style/5592/dark-instagram-variable-recolor-forked"><img src="https://i.imgur.com/fPb2Xbs.png" style="width: 30rem;"></img></a></p>
+<p align="center"><a href="https://userstyles.world/style/5592/dark-instagram-variable-recolor-forked"><img src="https://i.imgur.com/Jxr9icc.png" style="width: 30rem;"></img></a></p>
 
 <div id="preview">
   <h2>🖼 Preview</h2>
-    <img src="https://i.imgur.com/fNdYTMS.png"></img>
+    <img src="https://i.imgur.com/5IBjGxO.png"></img>
 </div>
 
 <div id="installation">
