@@ -575,6 +575,9 @@
 	._a3gq ._aam2 {
 		float: none;
 	}
+	._aam5{
+		max-width: calc(470px + /*[[feed]]*/)!important;
+	}	
 	._a3gq ._aam5 {
 		max-width: calc(470px + /*[[feed]]*/);
 		margin: 0 auto;
